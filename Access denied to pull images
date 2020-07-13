@@ -1,0 +1,22 @@
+hi @sstone1
+
+I'm referring this docs 
+
+https://ibm-blockchain.github.io/ansible-collection/tutorials/installing.html 
+
+https://cloud.ibm.com/docs/openshift?topic=openshift-registry#secret_entitled_software
+
+
+to deploy IBP via ansible and having access denied error while pullging images 
+
+Entitlement key is taken from URL: https://myibm.ibm.com/products-services/containerlibrary
+
+Error:
+```
+failed to resolve reference "cp.icr.io/cp/ibp-crdwebhook:2.5.0-20200618-amd64": pull access denied
+```
+
+**Question**: should I purchase additionally any IBP entitlement key (I use a key from URL https://myibm.ibm.com/products-services/containerlibrary
+) or do any extra steps in order to get access to `cp.icr.io/cp/ibp-crdwebhook:2.5.0-20200618-amd64`
+
+I see for manually deployed IBPs we use container registry `us.icr.io`, not `cp.icr.io`
